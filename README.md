@@ -4,8 +4,8 @@
 
 ![Image](https://github.com/user-attachments/assets/3e6ddac2-df71-4f5e-b22f-171de6bc212c)
 
-->폴링 방식으로 접근
+1. 폴링 방식 접근
 
-보완점:
-실 온도값을 보려면 베타값을 이용해서 식을 세워야 함.
-<img width="752" height="768" alt="image" src="https://github.com/user-attachments/assets/37a69b5d-af1e-4502-a575-4472ee160e7b" />
+2. 전압값으로 변경 후 온도값 출력을 위한 수식 성립
+
+<img width="525" height="488" alt="image" src="https://github.com/user-attachments/assets/1dc82a9d-174e-4396-9cb0-ffec47e561e5" />
