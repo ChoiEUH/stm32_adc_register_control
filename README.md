@@ -8,3 +8,4 @@
 
 보완점:
 실 온도값을 보려면 베타값을 이용해서 식을 세워야 함.
+<img width="752" height="768" alt="image" src="https://github.com/user-attachments/assets/37a69b5d-af1e-4502-a575-4472ee160e7b" />
