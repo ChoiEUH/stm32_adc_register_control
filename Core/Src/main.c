@@ -21,7 +21,7 @@
 
 #include "stdio.h"
 
-#include "string.h"
+#include "math.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -44,7 +44,12 @@ char buf[50];
 typedef struct{
 uint16_t adcv;
 
-uint16_t voltage;
+float voltage;
+
+float tempK;
+
+float tempC;
+float regi;
 
 }thermistor;
 
@@ -118,11 +123,18 @@ int main(void)
     /* USER CODE END WHILE */
   ADC1->CR2 |= 0x40000001;
   ther.adcv = ADC1->DR;
-  
-  sprintf(buf, "%d\r\n", ther.adcv);
-  HAL_UART_Transmit(&huart3, (uint8_t*)buf, strlen(buf), 0xFFFF);
+  ther.voltage = (ther.adcv/4095.0f)*3.3f;
 
-  HAL_Delay(1000);
+  ther.regi = 1000.0f*(ther.voltage/(3.3f - ther.voltage));
+
+  ther.tempK = 1.0f / ((1.0f/298.15f) + (1.0f/3950.0f) * log(ther.regi/10000.0f));
+
+  ther.tempC = ther.tempK - 273.15f;
+
+  sprintf(buf,"%.2f C\r\n",ther.tempC);
+  HAL_UART_Transmit(&huart3,(uint8_t*)buf,strlen(buf),0xFFFF);
+
+  HAL_Delay(100);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
