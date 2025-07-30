@@ -118,9 +118,8 @@ int main(void)
     /* USER CODE END WHILE */
   ADC1->CR2 |= 0x40000001;
   ther.adcv = ADC1->DR;
-  ther.voltage = (ther.adcv / 4095) * 5;
   
-  sprintf(buf, "%d\r\n", ther.voltage);
+  sprintf(buf, "%d\r\n", ther.adcv);
   HAL_UART_Transmit(&huart3, (uint8_t*)buf, strlen(buf), 0xFFFF);
 
   HAL_Delay(1000);
