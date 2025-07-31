@@ -12,7 +12,11 @@
 <img width="2385" height="984" alt="beta_equation_ln" src="https://github.com/user-attachments/assets/6c341432-f4d0-4aeb-b061-0fa8de256008" />
 
 우리가 원하는 것은 현재 온도 T이기에, 이 T를 구하기 위해서는 지수함수를 선형 함수로 바꿔야 하기에, 곱셈 로그 공식을 사용한 후 양변에 대해 정리하면 온도 T를 구할 수 있다.
+고로 나온 식은.
 
 
+<img width="5451" height="637" alt="final_temperature_formula" src="https://github.com/user-attachments/assets/6b9183b0-e23a-4145-8c4f-2817ccaf5cd6" />
+
+하지만, 이 온도는 화씨이므로, 섭씨로 변경하기 위해선, 도출된 온도에서 -273.15를 뺀다.
 
 <img width="525" height="488" alt="image" src="https://github.com/user-attachments/assets/1dc82a9d-174e-4396-9cb0-ffec47e561e5" />
