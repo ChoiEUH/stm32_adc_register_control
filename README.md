@@ -14,8 +14,9 @@
 우리가 원하는 것은 현재 온도 T이기에, 이 T를 구하기 위해서는 지수함수를 선형 함수로 바꿔야 하기에, 곱셈 로그 공식을 사용한 후 양변에 대해 정리하면 온도 T를 구할 수 있다.
 고로 나온 식은.
 
+<img width="597" height="129" alt="image" src="https://github.com/user-attachments/assets/b542a573-8bda-4419-b88c-c255d33f5d0c" />
 
-<img width="5451" height="637" alt="final_temperature_formula" src="https://github.com/user-attachments/assets/6b9183b0-e23a-4145-8c4f-2817ccaf5cd6" />
+
 
 하지만, 이 온도는 화씨이므로, 섭씨로 변경하기 위해선, 도출된 온도에서 -273.15를 뺀다.
 
